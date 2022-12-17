@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import model.Habitat;
 
 public class HabitatDao {
-    //  Get Insert Habibat Dao in Database
     public int insert(Habitat habitat) {
         int result = -1;
         try (Connection connection = MySqlConnection.getInstance().getConnection()) {
@@ -27,7 +26,6 @@ public class HabitatDao {
         return result;
     }
 
-    // Update Habitat Dao in Database
     public int update(Habitat habitat) {
         int result = -1;
         try (Connection connection = MySqlConnection.getInstance().getConnection()) {
@@ -43,7 +41,6 @@ public class HabitatDao {
         return result;
     }
 
-    // Delete Habibat dao in database
     public int delete(Habitat habitat) {
         int result = -1;
         try (Connection connection = MySqlConnection.getInstance().getConnection()) {

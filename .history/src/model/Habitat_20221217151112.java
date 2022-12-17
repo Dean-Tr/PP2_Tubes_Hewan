@@ -1,6 +1,6 @@
 package model;
 
-// Getter And Setter
+
 public class Habitat {
     private String id;
     private String namaHabitat;

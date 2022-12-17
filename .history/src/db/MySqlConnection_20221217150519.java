@@ -4,12 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class MySqlConnection {
-
-    // Setting of Database
     private final static String DB_URL = "jdbc:mysql://localhost:3306/pp2_tubes_hewan";
     private final static String DB_USER = "root";
     private final static String DB_PASS = "";
-    // End off Setting Database
 
     private static MySqlConnection instance;
 
@@ -20,7 +17,6 @@ public class MySqlConnection {
         return instance;
     }
 
-    // Get Koneksi Database
     public Connection getConnection() {
         Connection connection = null;
         try {
