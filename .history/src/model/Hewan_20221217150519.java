@@ -1,6 +1,5 @@
 package model;
 
-// Getter And Setter
 public class Hewan {
     private String id;
     private String nama;

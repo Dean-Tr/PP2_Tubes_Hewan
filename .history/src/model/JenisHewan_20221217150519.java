@@ -1,6 +1,5 @@
 package model;
 
-// Jenis Hewan Getter AND Setter
 public class JenisHewan {
     private String id;
     private String jenis;

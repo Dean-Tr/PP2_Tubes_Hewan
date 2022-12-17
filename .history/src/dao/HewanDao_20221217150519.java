@@ -13,8 +13,6 @@ import model.JenisHewan;
 import model.Habitat;
 
 public class HewanDao {
-
-    // Insert Hewan Dao In Database
     public int insert(Hewan hewan) {
         int result = -1;
         try (Connection connection = MySqlConnection.getInstance().getConnection()) {
@@ -35,7 +33,6 @@ public class HewanDao {
         return result;
     }
 
-    // Update Hewan Dao in Database
     public int update(Hewan hewan) {
         int result = -1;
         try (Connection connection = MySqlConnection.getInstance().getConnection()) {
@@ -56,7 +53,6 @@ public class HewanDao {
         return result;
     }
 
-    // Delete in Hewan Dao Database
     public int delete(Hewan hewan) {
         int result = -1;
         try (Connection connection = MySqlConnection.getInstance().getConnection()) {
