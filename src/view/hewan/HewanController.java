@@ -30,7 +30,7 @@ public class HewanController {
                 if (confirmation == JOptionPane.YES_OPTION) {
                     HewanController.this.simpan();
                 } else {
-                    JOptionPane.showMessageDialog(hewanFrame, "Anda tidak mengsimpan data");
+                    JOptionPane.showMessageDialog(hewanFrame, "Anda tidak menyimpan data");
                 }
             }
         });
@@ -78,7 +78,7 @@ public class HewanController {
         String jenisKelamin = this.hewanFrame.getJenisKelamin();
         JenisHewan jenisHewan = this.hewanFrame.getJenisHewan();
         Habitat habitat = this.hewanFrame.getHabitat();
-        if (nama.isEmpty() || umur.isEmpty() || jenisKelamin.isEmpty()) {
+        if (nama.trim().isEmpty() || umur.trim().isEmpty() || jenisKelamin.trim().isEmpty()) {
             this.hewanFrame.showAlert("Form tidak boleh ada yang kosong");
         } else {
             Hewan hewan = new Hewan();
